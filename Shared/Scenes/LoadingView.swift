@@ -10,7 +10,7 @@ import SwiftUI
 struct LoadingView: View {
     var body: some View {
         LottieView(name: "food_loading", loopMode: .loop)
-            .frame(width: .infinity, height: .infinity, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding([.leading, .trailing], 10)
     }
 }
