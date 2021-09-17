@@ -32,6 +32,7 @@
 		C1DC27AB26F44A2B0035FB63 /* FoodListHorizentalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC27AA26F44A2B0035FB63 /* FoodListHorizentalScrollView.swift */; };
 		C1DC27AD26F44A3D0035FB63 /* FoodListVerticalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC27AC26F44A3D0035FB63 /* FoodListVerticalScrollView.swift */; };
 		C1DC27AF26F44A9D0035FB63 /* FoodCardLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC27AE26F44A9D0035FB63 /* FoodCardLandscape.swift */; };
+		C1DC27B126F45D400035FB63 /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC27B026F45D400035FB63 /* FoodDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		C1DC27AA26F44A2B0035FB63 /* FoodListHorizentalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListHorizentalScrollView.swift; sourceTree = "<group>"; };
 		C1DC27AC26F44A3D0035FB63 /* FoodListVerticalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListVerticalScrollView.swift; sourceTree = "<group>"; };
 		C1DC27AE26F44A9D0035FB63 /* FoodCardLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCardLandscape.swift; sourceTree = "<group>"; };
+		C1DC27B026F45D400035FB63 /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				C1DC279726F438C50035FB63 /* CategoryListView.swift */,
 				C1DC279B26F43DA90035FB63 /* FoodListView.swift */,
 				C1DC27A426F443770035FB63 /* EntryParentView.swift */,
+				C1DC27B026F45D400035FB63 /* FoodDetailView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				C1DC27A226F43F2C0035FB63 /* FoodCardPortait.swift in Sources */,
 				C14AA13626F3BD690030C358 /* SearchBar.swift in Sources */,
 				C14AA14426F3D34F0030C358 /* RestaurantCellHorizontal.swift in Sources */,
+				C1DC27B126F45D400035FB63 /* FoodDetailView.swift in Sources */,
 				C14AA14226F3CF220030C358 /* RestaurantListHorizentalScrollView.swift in Sources */,
 				C1DC279626F437210035FB63 /* Category.swift in Sources */,
 			);

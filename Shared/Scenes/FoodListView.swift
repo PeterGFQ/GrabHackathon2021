@@ -43,5 +43,6 @@ struct FoodListView: View {
 struct FoodListView_Previews: PreviewProvider {
     static var previews: some View {
         FoodListView()
+            .environmentObject(Global(currentCategory: Category(id: "", title: "abc", icon: "buddy_time"), currentFood: nil))
     }
 }

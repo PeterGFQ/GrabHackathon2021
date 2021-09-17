@@ -10,6 +10,7 @@ import SwiftUI
 enum Page {
     case category
     case foodList
+    case foodDetail
 }
 
 class ViewRouter: ObservableObject {

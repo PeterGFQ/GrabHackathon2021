@@ -17,6 +17,8 @@ struct EntryParentView: View {
             CategoryListView()
         case .foodList:
             FoodListView()
+        case .foodDetail:
+            FoodDetailView()
         }
     }
 }
@@ -24,5 +26,6 @@ struct EntryParentView: View {
 struct EntryParentView_Previews: PreviewProvider {
     static var previews: some View {
         EntryParentView()
+            .environmentObject(ViewRouter())
     }
 }

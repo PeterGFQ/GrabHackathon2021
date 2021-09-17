@@ -9,10 +9,17 @@ import SwiftUI
 
 struct FoodCardLandscape: View {
 
+    @EnvironmentObject var viewRouter: ViewRouter
+    @EnvironmentObject var global: Global
+
     @State var food: Food = Food(id: "", name: "Burger", image: "grab_food_logo", price: 23.5, description: "")
 
     var body: some View {
-//        VStack(content: {
+        Button(action: {
+            global.currentFood = food
+            viewRouter.currentPage = .foodDetail
+        }, label: {
+            //        VStack(content: {
             HStack(alignment: .center,
                    spacing: 8,
                    content: {
@@ -37,7 +44,9 @@ struct FoodCardLandscape: View {
                     }).padding(.trailing, 16)
                     Spacer()
                    })
-//        })
+                .foregroundColor(.black)
+            //        })
+        })
     }
 }
 
