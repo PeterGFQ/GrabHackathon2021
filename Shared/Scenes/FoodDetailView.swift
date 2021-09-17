@@ -90,8 +90,13 @@ struct FoodDetailView: View {
                 Button(action: {
                     if let currentFood = global.currentFood {
                         if let food = (global.wishList?.filter({ $0.name == currentFood.name })),
-                           food.isEmpty {
-                            global.wishList?.append(global.currentFood!)
+                           !food.isEmpty {
+
+                        } else {
+                            if global.wishList == nil {
+                                global.wishList = []
+                            }
+                            global.wishList?.append(currentFood)
                         }
                     }
                     viewRouter.currentPage = .cart
