@@ -16,6 +16,7 @@ struct GrabKidApp: App {
     var body: some Scene {
         WindowGroup {
             TopLogoBanner()
+                .environmentObject(viewRouter)
             EntryParentView()
                 .environmentObject(global)
                 .environmentObject(viewRouter)

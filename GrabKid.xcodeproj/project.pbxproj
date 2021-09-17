@@ -100,7 +100,7 @@
 			children = (
 				C1DC27A826F445E00035FB63 /* Global.swift */,
 				C1DC27A626F444360035FB63 /* ViewRouter.swift */,
-				C1DC279226F436710035FB63 /* ViewModels */,
+				C1DC279226F436710035FB63 /* DataModels */,
 				C14AA13426F3BCDB0030C358 /* ViewComponents */,
 				C14AA13126F3BC730030C358 /* Scenes */,
 				C14AA11026F3BC130030C358 /* GrabKidApp.swift */,
@@ -186,13 +186,13 @@
 			path = RestaurantCells;
 			sourceTree = "<group>";
 		};
-		C1DC279226F436710035FB63 /* ViewModels */ = {
+		C1DC279226F436710035FB63 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
 				C1DC279326F436870035FB63 /* Food.swift */,
 				C1DC279526F437210035FB63 /* Category.swift */,
 			);
-			path = ViewModels;
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 		C1DC279D26F43EE00035FB63 /* Food */ = {
