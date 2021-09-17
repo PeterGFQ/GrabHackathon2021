@@ -22,6 +22,6 @@ struct FoodDetailView: View {
 struct FoodDetailView_Previews: PreviewProvider {
     static var previews: some View {
         FoodDetailView()
-            .environmentObject(Global(currentFood: Food(id: "", name: "xxxxx", image: "", price: 0, description: nil)))
+            .environmentObject(Global(currentFood: Food(id: "", name: "xxxxx", imageUrl: "", price: 0, description: nil)))
     }
 }

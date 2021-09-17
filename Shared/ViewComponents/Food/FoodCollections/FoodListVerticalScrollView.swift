@@ -10,11 +10,11 @@ import SwiftUI
 struct FoodListVerticalScrollView: View {
 
     @State var foodList: [Food] = [
-        Food(id: "", name: "Food 1", image: "grab_food_logo", price: 42),
-        Food(id: "", name: "Food 2", image:"grab_food_logo", price: 1.2),
-        Food(id: "", name: "Food 3", image:"grab_food_logo", price: 58.5),
-        Food(id: "", name: "Food 4", image:"grab_food_logo", price: 3),
-        Food(id: "", name: "Food 5", image:"grab_food_logo", price: 32.2)]
+        Food(id: "", name: "Food 1", imageUrl: "grab_food_logo", price: 42),
+        Food(id: "", name: "Food 2", imageUrl:"grab_food_logo", price: 1.2),
+        Food(id: "", name: "Food 3", imageUrl:"grab_food_logo", price: 58.5),
+        Food(id: "", name: "Food 4", imageUrl:"grab_food_logo", price: 3),
+        Food(id: "", name: "Food 5", imageUrl:"grab_food_logo", price: 32.2)]
 
     var body: some View {
         ScrollView(showsIndicators: false) {

@@ -12,7 +12,7 @@ struct FoodCardPortait: View {
     @EnvironmentObject var global: Global
     @EnvironmentObject var viewRouter: ViewRouter
 
-    @State var food: Food = Food(id: "", name: "Burger", image: "grab_food_logo", price: 23.5, description: "")
+    @State var food: Food = Food(id: "", name: "Burger", imageUrl: "grab_food_logo", price: 23.5, description: "")
 
     var body: some View {
         Button(action: {
@@ -22,7 +22,7 @@ struct FoodCardPortait: View {
             VStack(alignment: .leading,
                    spacing: 8,
                    content: {
-                    Image(food.image)
+                    Image(food.imageUrl)
                         .renderingMode(.original)
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)

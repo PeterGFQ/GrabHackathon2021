@@ -11,7 +11,7 @@ import Foundation
 struct Food {
     var id: String
     var name: String
-    var image: String
+    var imageUrl: String
     var price: Double
     var description: String?
 }

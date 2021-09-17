@@ -9,7 +9,6 @@ import Foundation
 
 struct Category {
     var id: String
-    var title: String
-    var icon: String
-    var foodList: [Food]?
+    var name: String
+    var imageUrl: String
 }

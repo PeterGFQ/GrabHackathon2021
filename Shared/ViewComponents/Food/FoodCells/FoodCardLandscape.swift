@@ -12,7 +12,7 @@ struct FoodCardLandscape: View {
     @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var global: Global
 
-    @State var food: Food = Food(id: "", name: "Burger", image: "grab_food_logo", price: 23.5, description: "")
+    @State var food: Food = Food(id: "", name: "Burger", imageUrl: "grab_food_logo", price: 23.5, description: "")
 
     var body: some View {
         Button(action: {
@@ -23,7 +23,7 @@ struct FoodCardLandscape: View {
             HStack(alignment: .center,
                    spacing: 8,
                    content: {
-                    Image(food.image)
+                    Image(food.imageUrl)
                         .renderingMode(.original)
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)

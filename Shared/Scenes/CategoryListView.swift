@@ -24,7 +24,7 @@ struct CategoryListView: View {
                 .foregroundColor(Color.green)
             LazyVGrid(columns: columns, spacing: 30) {
                 ForEach(0..<10) { index in
-                    CategoryKidCell(category: Category(id: "", title: "\(index)", icon: "buddy_time"))
+                    CategoryKidCell(category: Category(id: "", name: "\(index)", imageUrl: "buddy_time"))
                 }
             }
 
