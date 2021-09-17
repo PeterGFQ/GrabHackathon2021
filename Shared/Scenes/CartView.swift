@@ -42,7 +42,7 @@ struct CartView: View {
             HStack{
                 Spacer()
                 Button(action: {
-                    
+                    viewRouter.currentPage = .loading
                 }, label: {
                     Text("Ask mom to pay")
                         .fontWeight(.bold)

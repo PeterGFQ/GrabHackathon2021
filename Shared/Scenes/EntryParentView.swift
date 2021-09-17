@@ -21,6 +21,8 @@ struct EntryParentView: View {
             FoodDetailView()
         case .cart:
             CartView()
+        case .loading:
+            LoadingView()
         }
     }
 }
