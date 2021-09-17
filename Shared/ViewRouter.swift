@@ -11,6 +11,7 @@ enum Page {
     case category
     case foodList
     case foodDetail
+    case cart
 }
 
 class ViewRouter: ObservableObject {

@@ -41,6 +41,16 @@ struct FoodCardLandscape: View {
                             .font(.body)
                             .fontWeight(.bold)
 
+//                        Image(systemName: "plus")
+//                            .renderingMode(.template)
+//                            .resizable(resizingMode: .stretch)
+//                            .aspectRatio(contentMode: .fit)
+//                            .foregroundColor(.green)
+//                            .cornerRadius(10)
+//                            .frame(width: 150,
+//                                   height: 100,
+//                                   alignment: .bottomTrailing)
+//                            .padding([.leading,.trailing], 16)
                     }).padding(.trailing, 16)
                     Spacer()
                    })

@@ -16,8 +16,8 @@ struct FoodListView: View {
         VStack(alignment: .center, spacing: 16.0) {
 
             ScrollView(.vertical) {
-                SearchBar(text: $searchText)
-                    .padding([.leading, .trailing ,.bottom])
+//                SearchBar(text: $searchText)
+//                    .padding([.leading, .trailing ,.bottom])
 
                 CategoryKidCell(category: global.currentCategory!)
                     .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/,

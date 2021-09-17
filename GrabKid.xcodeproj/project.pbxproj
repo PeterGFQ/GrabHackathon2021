@@ -33,6 +33,7 @@
 		C1DC27AD26F44A3D0035FB63 /* FoodListVerticalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC27AC26F44A3D0035FB63 /* FoodListVerticalScrollView.swift */; };
 		C1DC27AF26F44A9D0035FB63 /* FoodCardLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC27AE26F44A9D0035FB63 /* FoodCardLandscape.swift */; };
 		C1DC27B126F45D400035FB63 /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC27B026F45D400035FB63 /* FoodDetailView.swift */; };
+		C1DC27B326F48DAA0035FB63 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC27B226F48DAA0035FB63 /* CartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		C1DC27AC26F44A3D0035FB63 /* FoodListVerticalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListVerticalScrollView.swift; sourceTree = "<group>"; };
 		C1DC27AE26F44A9D0035FB63 /* FoodCardLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCardLandscape.swift; sourceTree = "<group>"; };
 		C1DC27B026F45D400035FB63 /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
+		C1DC27B226F48DAA0035FB63 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				C1DC279B26F43DA90035FB63 /* FoodListView.swift */,
 				C1DC27A426F443770035FB63 /* EntryParentView.swift */,
 				C1DC27B026F45D400035FB63 /* FoodDetailView.swift */,
+				C1DC27B226F48DAA0035FB63 /* CartView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				C14AA13826F3C2100030C358 /* TopLogoBanner.swift in Sources */,
 				C1DC27A926F445E00035FB63 /* Global.swift in Sources */,
 				C14AA13F26F3CAD50030C358 /* RestaurantCellVertical.swift in Sources */,
+				C1DC27B326F48DAA0035FB63 /* CartView.swift in Sources */,
 				C14AA13A26F3C23D0030C358 /* CategoryHorizontalScrollView.swift in Sources */,
 				C1DC27AB26F44A2B0035FB63 /* FoodListHorizentalScrollView.swift in Sources */,
 				C1DC279826F438C50035FB63 /* CategoryListView.swift in Sources */,
