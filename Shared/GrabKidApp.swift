@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct GrabKidApp: App {
+
+    @StateObject var global = Global()
+    @StateObject var viewRouter = ViewRouter()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TopLogoBanner()
+            EntryParentView()
+                .environmentObject(global)
+                .environmentObject(viewRouter)
         }
     }
 }
