@@ -40,21 +40,21 @@ struct FoodDetailView: View {
                         }
                     }
 
-                    HStack {
-                        Spacer()
-
-                        Button(action: {
-                            withAnimation(.spring(dampingFraction: 0.5)) {
-                                heart = "heart"
-                            }
-                        }, label: {
-                            Image(systemName: heart)
-                                .font(.largeTitle)
-                                .foregroundColor(.red)
-
-                        })
-                        .padding(.all, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                    }
+                    //                    HStack {
+                    //                        Spacer()
+                    //
+                    //                        Button(action: {
+                    //                            withAnimation(.spring(dampingFraction: 0.5)) {
+                    //                                heart = "heart"
+                    //                            }
+                    //                        }, label: {
+                    //                            Image(systemName: heart)
+                    //                                .font(.largeTitle)
+                    //                                .foregroundColor(.red)
+                    //
+                    //                        })
+                    //                        .padding(.all, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    //                    }
 
 
                     Text("Description")
@@ -88,6 +88,12 @@ struct FoodDetailView: View {
             HStack{
                 Spacer()
                 Button(action: {
+                    if let currentFood = global.currentFood {
+                        if let food = (global.wishList?.filter({ $0.name == currentFood.name })),
+                           food.isEmpty {
+                            global.wishList?.append(global.currentFood!)
+                        }
+                    }
                     viewRouter.currentPage = .cart
                 }, label: {
                     Text("I want it")

@@ -31,6 +31,8 @@ struct TopLogoBanner: View {
             viewRouter.currentPage = .foodList
         } else if viewRouter.currentPage == .foodList {
             viewRouter.currentPage = .category
+        } else if viewRouter.currentPage == .cart {
+            viewRouter.currentPage = .foodDetail
         }
     }
 }
