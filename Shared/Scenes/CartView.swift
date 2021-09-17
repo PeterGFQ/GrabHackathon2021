@@ -9,19 +9,24 @@ import SwiftUI
 
 struct CartView: View {
 
+    @EnvironmentObject var global: Global
+    @EnvironmentObject var viewRouter: ViewRouter
+
     var body: some View {
         ScrollView{
             ZStack {
-                Color(.green)
-                    .frame(width: 600, height: 600)
+                Color(.systemGreen)
+                    .frame(width: 500, height: 500)
                     .edgesIgnoringSafeArea(.all)
                     .cornerRadius(300)
-                    .offset(x: -50, y: -350)
-                Color(.green)
+                    .padding(.leading, -100)
+                    .padding(.top, -250)
+                Color(.systemGreen)
                     .frame(width: 300, height: 300)
                     .edgesIgnoringSafeArea(.all)
                     .cornerRadius(300)
-                    .offset(x: -100, y: -250)
+                    .padding(.leading, -150)
+                    .padding(.top, -120)
                 HStack {
                     Text("🍔 Wish List")
                         .bold()
@@ -30,16 +35,30 @@ struct CartView: View {
                 .padding(.all, 20)
                 .foregroundColor(.white)
                 .frame(width: UIScreen.main.bounds.width)
-                .padding(.top, -250)
+                .padding(.top, -80)
+                .padding(.leading, -140)
             }
+            FoodListVerticalScrollView(foodList: global.wishList ?? [])
+            HStack{
+                Spacer()
+                Button(action: {
+                    
+                }, label: {
+                    Text("Ask mom to pay")
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding(.vertical, 10)
+                        .padding(.horizontal, 100)
+                        .background(Color.red)
+                        .cornerRadius(10)
 
-            Text("Work in progress")
-                .bold()
-                .font(.title)
-
-            Spacer()
+                })
+                Spacer()
+            }
+            .padding(.all, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+            .edgesIgnoringSafeArea(.all)
+            .background(Color.white.edgesIgnoringSafeArea(.all))
         }
-
         .edgesIgnoringSafeArea(.all)
     }
 }
@@ -47,5 +66,10 @@ struct CartView: View {
 struct CartView_Previews: PreviewProvider {
     static var previews: some View {
         CartView()
+            .environmentObject(
+                Global(wishList: [
+                    Food(id: "", name: "xxxxx", imageUrl: "grab_food_logo", price: 0, description: "good good good good good good good good good good good ")
+                ])
+            )
     }
 }
