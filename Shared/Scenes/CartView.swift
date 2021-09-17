@@ -39,6 +39,7 @@ struct CartView: View {
                 .padding(.leading, -140)
             }
             FoodListVerticalScrollView(foodList: global.wishList ?? [])
+                .allowsHitTesting(false)
             HStack{
                 Spacer()
                 Button(action: {
